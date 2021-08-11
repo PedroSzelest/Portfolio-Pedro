@@ -1,0 +1,15 @@
+.social-midia {
+   position: relative;
+   left: 70%;
+   top: 83vh;
+   width: 15vw; 
+   display: flex;
+   justify-content: space-around;
+   z-index: 999;
+}
+
+.social-midia > div {
+    font-size: 25px;
+    color: wheat;
+}
+

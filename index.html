@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Header -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/logoNavbar.css">
+    <link rel="stylesheet" href="./css/night.css">
+    <link rel="stylesheet" href="./css/slideBar.css">
+    <link rel="stylesheet" href="./css/floatingWords.css">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Main -->
+    <link rel="stylesheet" href="./css/sectionMe.css">
+    <link rel="stylesheet" href="./css/sectionProjects.css">
+    <link rel="stylesheet" href="./css/snake.css">
+    <link rel="stylesheet" href="./css/sectionQuestions.css">
+    <!-- Footer -->
+    <link rel="stylesheet" href="./css/contactMe.css">
+    <link rel="stylesheet" href="./css/socialMidia.css">
+    <title>Szelest</title>
+</head>
+<body>
+    <div id="night">
+    </div>
+    <section class="snake-game">
+        <div id="game-board"></div>
+    </section>
+    <header>
+        <div class="logo active">
+            <h2 class="logo-text active">Szelest</h2>
+            <div class="logo-click active"><i class='bx bx-tag-alt'></i></div>
+        </div>
+        <nav class="nav-links active">
+            <ul class="list-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#me">Me</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div id="home" class="slide-bar">
+            <img class="img-scroll active2" src="./imgs/img to portfolio.jpg" alt="">
+            <button class="button-img back"><i class='bx bx-left-arrow-alt' ></i></button>
+            <button class="button-img next"><i class='bx bx-right-arrow-alt'></i></button>
+        </div>
+        <div class="header-container-presentation">
+            <h2 class="header-presentation active"></h2>
+        </div>
+    </header>
+    <main>
+        <section class="me" id="me">
+            <div class="container-img-me"><img class="img-me" src="./imgs/img to portfolio.jpg" alt=""></div>
+            <div class="text-me">
+                <h3>WHO am I</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi sapiente cupiditate asperiores voluptate nesciunt ut officiis fuga eaque aliquid deleniti, ducimus temporibus. Quia veniam odio excepturi dicta soluta eius dolores.</p>
+            </div>
+        </section>
+        <section class="projects">
+            <div class="snake-container">
+                <img src="./imgs/snake img.png" alt="snake game">
+                <button class="play-snake">Let's play</button>
+                <legend>Snake Game</legend>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, molestias cum at unde, possimus sit voluptate magni pariatur temporibus, repellat facilis nostrum illo suscipit fugit nemo tempore dolorem excepturi sapiente?</p>
+            </div>
+            <div class="tic-container">
+                <img src="./imgs/tic tac toe img.png" alt="tic tac toe game">
+                <button class="play-tic">Let's play</button>
+                <legend>Tic Tac Toe</legend>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate sapiente magnam laboriosam ut facere tenetur corrupti, exercitationem dignissimos est alias accusamus, odio qui nihil voluptates aperiam, quasi blanditiis quidem provident.</p>
+            </div>
+        </section>
+        <section class="questions">
+            <h3>ANY QUESTIONS</h3>
+            <input type="text" placeholder="Your name">
+            <input type="text" placeholder="Your e-mail">
+            <input class="questions-message" type="text" placeholder="Message">
+            <button>Send Message</button>
+        </section>
+    </main>
+    <footer>
+        <section id="contact" class="contact">
+            <div class="contact-container">
+                <div class="contact-name">
+                    <i class='bx bxs-user'></i>
+                    <input type="text" placeholder="Name">
+                </div>
+                <div class="contact-email">
+                    <i class='bx bxs-envelope'></i>
+                    <input type="text" placeholder="E-mail">
+                </div>
+            </div>
+        </section>
+        <section class="social-midia">
+            <div class="ig"><i class='bx bxl-instagram-alt' ></i></div>
+            <div class="fb"><i class='bx bxl-facebook-circle'></i></div>
+            <div class="lk"><i class='bx bxl-linkedin' ></i></div>
+            <div class="git"><i class='bx bxl-github' ></i></div>
+        </section>
+    </footer>
+    
+    <script src="main.js" type="module"></script>
+</body>
+</html>

@@ -1,0 +1,144 @@
+/*Logo before animation*/
+
+.logo {
+    background: radial-gradient(rgb(0, 0, 0) 0%, rgb(44, 46, 67) 50%, rgb(89, 82, 96) 100%);
+    position: fixed;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    left: 40%;
+    top: -22%;
+    display: flex;
+    justify-content: center;
+    z-index: 1001;
+    transition: all 1s ease-in-out;
+}
+
+.logo-text {
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top: 65%;
+    text-transform: capitalize;
+    font-family: 'Righteous', cursive;
+    letter-spacing: 3px;
+}
+
+.logo-click {
+    position: absolute;
+    top: 85%;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+}
+
+.nav-links {
+    position: fixed;
+    left: 10%;
+    top: 0%;
+    width: 90vw;
+    height: 20vh;
+    background: linear-gradient(rgb(0, 0, 0, 0.5) 0%, rgb(44, 46, 67, 0.5) 50%, rgb(89, 82, 96, 0.5) 100%);
+    opacity: 0;
+    z-index: -1;
+}
+
+.list-links {
+    height: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.list-links a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+
+/*Logo after the animation with navbar (Going on)*/
+
+/*---Moving the logo---*/
+
+.logo.active {
+    left: -8%;
+    top: -15%
+}
+/*----------*/
+
+/*---Moving the logo text---*/
+.logo-text.active {
+    animation: tex 2s ease;
+}
+
+@keyframes tex {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 999;
+    }
+}
+
+.logo-text.active {
+    left: 55%;
+    top: 60%;
+}
+
+/*---Replacing the icon---*/
+
+.logo-click.active {
+    position: absolute;
+    left: 60%;
+    top: 80%;
+    animation: icon 2s ease;
+}
+
+@keyframes icon {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.logo-click.active {
+
+    opacity: 1;
+}
+
+/*---Showing the nav---*/
+.nav-links.active {
+    animation: show 2s ease-in;
+}
+
+@keyframes show {
+    0%{
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.nav-links.active {
+    opacity: 1;
+    z-index: 1000; 
+}
+/*----------*/
+
+/*---Media query---*/
+
+@media (max-width: 1023px) {
+    .logo.active {
+        opacity: 0;
+    }
+
+    .nav-links.active {
+        left: 0;
+        width: 100vw;
+        height: 8vw;
+    }
+}

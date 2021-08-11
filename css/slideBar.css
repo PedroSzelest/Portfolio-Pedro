@@ -1,0 +1,96 @@
+.slide-bar {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    width: 40%;
+    height: 60%;
+    border: medium solid rgb(178, 177, 185);
+    overflow: hidden;
+    z-index: 999;
+    opacity: 0.5;
+    transition: all 0.5s ease;
+}
+
+.button-img {
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    top: 50%;
+    color: white;
+    font-size: 30px;
+    opacity: 0.2;
+    transition: all 0.5s ease;
+}
+
+.img-scroll {
+    width: 100%;
+    height: 100%;
+}
+
+.back {
+    left: 5%;
+}
+.next {
+    left: 90%
+}
+
+/*---Animation to road the img---*/
+
+.img-scroll.active1 {
+    animation: turn 2s ease;
+}
+
+@keyframes turn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.img-scroll.active2 {
+    animation: turn2 1s ease;
+}
+
+@keyframes turn2 {
+    0%{
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/*---Hover button---*/
+
+.button-img:hover {
+    opacity: 1;
+}
+
+/*---Hover image---*/
+
+.slide-bar:hover {
+    opacity: 1;
+}
+
+@media (max-width: 1023px) {
+    .slide-bar {
+        left: 20%;
+        width: 60%;
+        top: 13%;
+    }
+}
+
+@media (max-width: 799px) {
+    .slide-bar {
+        left: 10%;
+        width: 80%;
+    }
+}
+
+@media (max-width: 599px) {
+    .slide-bar {
+        height: 40%;
+    }
+}

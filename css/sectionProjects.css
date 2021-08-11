@@ -1,0 +1,93 @@
+.projects {
+    background: linear-gradient(-45deg, rgb(248, 226, 207) 0%, rgb(253, 246, 240) 50%, rgb(252, 216, 212) 100%);
+    position: relative;
+    width: 40vw;
+    bottom: 62%;
+    left: 49.5%;
+    z-index: 999;
+    opacity: 0.5;
+    transition: all 0.5s ease;
+}
+
+.projects:hover {
+    opacity: 1;
+}
+
+.snake-container {
+    position: relative;
+    text-align: center;
+    padding: 20px;
+}
+
+.tic-container {
+    position: relative;
+    text-align: center;
+}
+
+.snake-container > img {
+    width: 20vw;
+    border: thin solid black;
+    margin-top: 20px;
+}
+
+.snake-container > legend {
+    margin: 10px;
+}
+
+.snake-container > p {
+    margin: 20px;
+    text-align: justify;
+}
+
+.tic-container > img {
+    width: 20vw;
+    border: thin solid black;
+}
+
+.tic-container > legend {
+    margin: 10px;
+}
+
+.tic-container > p {
+    padding: 30px;
+    text-align: justify;
+}
+
+.play-snake {
+    position: absolute;
+    top: 40%;
+    left: 84%;
+    border: none;
+    background-color: rgb(125, 237, 255);
+    color: rgb(248, 226, 207);
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.play-tic {
+    position: absolute;
+    top: 30%;
+    left: 84%;
+    border: none;
+    background-color: rgb(125, 237, 255);
+    color: rgb(248, 226, 207);
+    padding: 10px;
+    border-radius: 5px;
+    opacity: 0;
+}
+
+@media (max-width: 1023px) {
+    .projects {
+        left: 10%;
+        top: 0;
+        position: relative;
+        width: 80vw;
+    }
+}
+
+@media (max-width: 599px) {
+    .play-snake {
+        left: 80%;
+    }
+}

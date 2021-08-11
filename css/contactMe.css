@@ -1,0 +1,42 @@
+.contact {
+    position: relative;
+    top: 89vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: rgba(248, 226, 207, 0.4);
+    z-index: 999;
+}
+
+.contact-container > div {
+    margin: 20px;
+    color: wheat;
+}
+
+.contact-name::after {
+    position: absolute;
+    top: 32%;
+    left: 45%;
+    content: '_________________________';
+}
+
+.contact-email::after {
+    position: absolute;
+    top: 73%;
+    left: 45%;
+    content: '_________________________';
+}
+
+.contact-name > input,
+.contact-email > input {
+    background-color: transparent;
+    border: thin solid black;
+    height: 2.5vh;
+}
+
+.contact-email > input::placeholder,
+.contact-name > input::placeholder {
+    color: white;
+    position: absolute;
+    top:0%;
+}
