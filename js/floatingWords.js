@@ -3,13 +3,11 @@ export function words() {
     const $text = document.querySelector('.header-presentation')
 
     const changingWords = (time, work)=> {
-        return new Promise((resolve, reject)=> {
+        return new Promise((resolve)=> {
             if (true) {
                 setTimeout(()=> {
                     resolve(work())
                 }, time)
-            } else {
-                return reject()
             }
         })
     }

@@ -28,7 +28,7 @@ const $button_play = document.querySelector('.play-snake')
 function main(currentTime) {
     if(gameOver) {
         if(confirm('You lost.')) {
-            window.location = '/'
+            location.reload()
         }
         return
     }
